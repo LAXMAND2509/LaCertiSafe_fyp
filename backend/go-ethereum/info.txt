@@ -1,0 +1,130 @@
+Node 1
+Public address of the key:   0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8
+Path of the secret key file: data\keystore\UTC--2024-02-17T13-47-32.073331600Z--8e4bc5e1519da18a059c69d3990b357bc902b3f8
+
+Node 2
+Public address of the key:   0x5295169927a254b220331BfEba2a72F964B300ab
+Path of the secret key file: data\keystore\UTC--2024-02-17T13-49-08.356269100Z--5295169927a254b220331bfeba2a72f964b300ab
+
+
+
+enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:0?discport=30301
+
+
+Node 2
+geth --datadir "./data"  --port 30306 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:0?discport=30301  --authrpc.port 8546 --networkid 1234567 --unlock 0x5295169927a254b220331BfEba2a72F964B300ab --password D:\go-ethereum\password.txt --ipcdisable
+
+
+Node 1
+geth --datadir "./data"  --port 30304 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:0?discport=30301 --authrpc.port 8547 --ipcdisable --allow-insecure-unlock  --http --http.corsdomain="https://remix.ethereum.org" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt  --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8
+
+
+geth –datadir "./data" --port 30304 --http --http.addr ”192.168.0.105”
+–http.port 8501 –http.corsdomain ”*” –http.api ”personal, eth, net,web3, txpool,
+miner” –bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:0?discport=30301 –networkid 1234567 –ipcdisable –unlock
+”0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8” –allow-insecure-unlock
+–password ../password.txt –nat extip:192.168.0.105
+
+
+
+
+geth --datadir "./data"  --port 30304  --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:0?discport=30301 --authrpc.port 8547 --ipcdisable --allow-insecure-unlock  --http --http.addr "192.168.0.105" --http.port 8501 --http.corsdomain ”*” --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:192.168.0.105
+
+
+Working ------------>
+
+geth --datadir "./data" --syncmode "full" --port 30304  --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --ipcdisable --allow-insecure-unlock  --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain ”*” --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:127.0.0.1 
+
+
+
+
+-- good v1.1
+
+Node 1
+geth --datadir "./data" --syncmode "full" --port 30304  --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --allow-insecure-unlock  --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain "*" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:127.0.0.1  --ipcpath \\.\pipe\geth.ipc  
+
+---
+
+geth --datadir "./data" --syncmode "full" --port 30304 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --ipcpath "\\.\pipe\geth.ipc"
+
+geth --datadir "./data" --syncmode "full" --port 30304 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --allow-insecure-unlock --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain "*" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:127.0.0.1 --ipcpath "\\.\pipe\geth.ipc"
+
+
+----
+
+
+
+
+Node 2
+geth --datadir "./data" --syncmode "full" --port 30306 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301  --authrpc.port 8546 --networkid 1234567 --unlock 0x5295169927a254b220331BfEba2a72F964B300ab --password D:\go-ethereum\password.txt --nat extip:127.0.0.1  --ipcdisable 
+
+
+
+geth --datadir "./data" --syncmode "full" --port 30304  --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --allow-insecure-unlock  --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain "*" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:127.0.0.1  --ipcpath \\.\pipe\geth.ipc  
+
+
+geth --datadir "./data" --syncmode "full" --port 30306 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301  --authrpc.port 8546 --allow-insecure-unlock  --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain "*" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x5295169927a254b220331BfEba2a72F964B300ab --password D:\go-ethereum\password.txt --mine --miner.etherbase=0x5295169927a254b220331BfEba2a72F964B300ab --nat extip:127.0.0.1  --ipcpath \\.\pipe\geth.ipc  
+
+-- good v1.2
+geth --datadir "./data" --syncmode "full" --port 30304  --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --allow-insecure-unlock  --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain "*" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:127.0.0.1  --ipcpath \\.\pipe\geth.ipc --gasprice 0 --maxintrinsicgas auto
+
+
+
+
+geth --datadir "./data" --syncmode "full" --port 30306 --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301  --authrpc.port 8546 --networkid 1234567 --unlock 0x5295169927a254b220331BfEba2a72F964B300ab --password D:\go-ethereum\password.txt --nat extip:127.0.0.1  --ipcdisable --gasprice 0 --maxintrinsicgas auto
+
+
+with console
+geth --datadir "./data" -- --syncmode "full" --port 30304  --bootnodes enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:30301 --authrpc.port 8547 --allow-insecure-unlock  --http --http.addr "127.0.0.1" --http.port 8501 --http.corsdomain "*" --http.api web3,eth,debug,personal,net --networkid 1234567 --unlock 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --password ../password.txt --http.vhosts "*" --mine --miner.etherbase=0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8 --nat extip:127.0.0.1  --ipcpath \\.\pipe\geth.ipc console
+
+
+enode://8a4a0b9c0ad77fee03936f2f4b6be376fcd0151253fa1f411fa77fbacfb46ff64f71408a9de2c431b36f1b8dc854167b71e77ef8e2dfa6e2d91974836493d070@127.0.0.1:0?discport=30301
+
+
+bootnode -nodekey boot.key -verbosity 7 -addr "127.0.0.1:30301"
+
+bootnode -nodekey boot.key -verbosity 7 -addr "127.0.0.1:30301" –nat extip:192.168.0.105
+
+bootnode -nodekey boot.key -verbosity 7 -addr "127.0.0.1:30301" –nat extip:192.168.0.105
+
+bootnode -nodekey boot.key -verbosity 7 -addr "127.0.0.1:30301" –nat extip:192.168.0.105
+
+bootnode -nodekey boot.key -verbosity 9 -addr :30301 –-nat extip:127.0.0.1
+
+
+
+private key --> node 1
+
+f973e2f698f4abb1b7d9d414c815d784a694ac1fd705112143c969f153238463
+
+private key for node 2
+46501842d11a66fd644d84aae85dba57feb963f20189afae9beed969d351ba93
+
+to connect to the remix 
+--http.addr "127.0.0.1" --http.port 8501
+
+
+geth attach http://127.0.0.1:8501
+no admin
+ or
+
+ geth attach
+
+new account in node1
+"0x4718b503CeF412507De349558D7B17a9e28D124b"
+
+private key 
+for Account 2: 0x8e4bC5E1519dA18a059C69D3990B357bC902B3F8
+f973e2f698f4abb1b7d9d414c815d784a694ac1fd705112143c969f153238463
+
+for Account 4: 0x5295169927a254b220331BfEba2a72F964B300ab
+46501842d11a66fd644d84aae85dba57feb963f20189afae9beed969d351ba93
+
+
+
+
+
+geth init --datadir node1 D:\go-ethereum\privateblock.json
+
+
+

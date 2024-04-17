@@ -1,0 +1,8 @@
+personal.Accounts
+net.peerCount
+exir
+net.peerCount
+admin.peers
+eth.getBalance(eth.accounts[0])
+eth.accounts
+eth.getBalance(eth.accounts[1])

@@ -1,0 +1,200 @@
+{
+  "valid": [
+    {
+      "CSN": 1,
+      "emailId": "laxmandilliraj1@gmail.com",
+      "status": "pending",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN1",
+      "date": 1710594845951
+    },
+    {
+      "CSN": 2,
+      "emailId": "laxmandilliraj2@gmail.com",
+      "status": "pending",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN2",
+      "date": 1710594845952
+    },
+    {
+      "CSN": 81,
+      "emailId": "laxman@gmail.com",
+      "status": " ",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN3",
+      "date": 1710594845953
+    },
+    {
+      "CSN": 126,
+      "emailId": "laxv2@gmail.com",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN",
+      "date": 1710742899740
+    },
+    {
+      "CSN": null,
+      "emailId": "laxmandilliraj999@gmail.com",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1710743095499
+    },
+    {
+      "idFailed": 7,
+      "CSN": null,
+      "emailId": "laxmanv2@gmail.com",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1710743501635
+    },
+    {
+      "idFailed": 8,
+      "CSN": null,
+      "emailId": "lax@gmail.com",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1710743533411
+    },
+    {
+      "CSN": 125,
+      "emailId": "laxv2@gmail.com",
+      "status": "pending",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN",
+      "date": 1710743616782
+    },
+    {
+      "CSN": 148,
+      "emailId": "laxmandilliraj12345@gmail.com",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "true",
+      "verifier": "SSN",
+      "date": 1710777570317
+    },
+    {
+      "CSN": 155,
+      "emailId": "achyuthprime123321@gmail.com",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "true",
+      "verifier": "SSN",
+      "date": 1711127116674
+    },
+    {
+      "CSN": 147,
+      "emailId": "laxmandilliraj2@gmail.com",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN",
+      "date": 1712407244702
+    },
+    {
+      "CSN": 168,
+      "emailId": "lax@gmail.com",
+      "status": "failed",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN",
+      "date": 1712483724756
+    },
+    {
+      "idFailed": 35,
+      "CSN": null,
+      "emailId": "laxman2010649@ssn.edu.in",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1712487333540
+    },
+    {
+      "idFailed": 36,
+      "CSN": null,
+      "emailId": "laxman2010649@ssn.edu.in",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1712487393813
+    },
+    {
+      "idFailed": 45,
+      "CSN": null,
+      "emailId": "laxman2010649@ssn.edu.in",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1712583902477
+    },
+    {
+      "CSN": 172,
+      "emailId": "laxman2010649@ssn.edu.in",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "true",
+      "verifier": "CEG",
+      "date": 1712591176695
+    },
+    {
+      "CSN": 172,
+      "emailId": "laxman2010649@ssn.edu.in",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "true",
+      "verifier": "VIT",
+      "date": 1712591541683
+    },
+    {
+      "idFailed": 80,
+      "CSN": null,
+      "emailId": "laxman2010649@ssn.edu.in",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "VIT",
+      "date": 1712591561312
+    },
+    {
+      "CSN": 172,
+      "emailId": "achyuthprime@gmail.com",
+      "status": "failed",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN",
+      "date": 1712997942912
+    },
+    {
+      "idFailed": 86,
+      "CSN": null,
+      "emailId": "achyuthprime@gmail.com",
+      "status": "failed",
+      "otp": null,
+      "checkotp": null,
+      "verifier": "SSN",
+      "date": 1713001364278
+    },
+    {
+      "CSN": 182,
+      "emailId": "achyuthprime@gmail.com",
+      "status": "valid",
+      "otp": "1234",
+      "checkotp": "false",
+      "verifier": "SSN",
+      "date": 1713001416192
+    }
+  ]
+}
